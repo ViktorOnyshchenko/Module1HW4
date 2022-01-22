@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Homework4
@@ -28,8 +29,8 @@ namespace Homework4
             Console.WriteLine($"\nString with odd values:\n{oddNumber.ToString()}");
             Console.WriteLine($"String with even values:\n{evenNumber.ToString()}");
             ReplaceSomeLetter(ref oddNumber, ref evenNumber);
-            Console.WriteLine($"\nString with odd after replace values:\n{oddNumber.ToString()}");
-            Console.WriteLine($"String with even after replace values:\n{evenNumber.ToString()}");
+            Console.WriteLine($"\nAmount upper letter = {oddNumber.ToString().Count(x => char.IsUpper(x))}\nString with odd after replace values:\n{oddNumber.ToString()}");
+            Console.WriteLine($"\nAmount upper letter = {evenNumber.ToString().Count(x => char.IsUpper(x))}\nString with even after replace values:\n{evenNumber.ToString()}");
             Console.ReadKey();
         }
 
